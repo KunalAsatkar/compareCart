@@ -1,12 +1,20 @@
 .profile-container {
+    margin-top: 0;
     position: relative;
     display: inline-block;
 }
 
 .profile-image {
-    width: 40px;
-    height: 40px;
+    /* background-image: url("../profile.png"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    /* width: auto; */
     border-radius: 50%;
+    width: 2vw;
+    height: auto;
+    /* height: calc(0.5vw + 3vh); */
 }
 
 .user-profile-card {
@@ -46,6 +54,10 @@
 }
 
 .profile-card {
+    font-size: calc(0.7vw + 0.7vh);
+    padding-left: 5px;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 1000; */
     margin: 0;
 }
 

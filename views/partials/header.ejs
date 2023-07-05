@@ -32,10 +32,10 @@
         </div>
         <div class="navigation">
             <div>
-                <h3><a href="/about">About Us</a></h3>
+                <p class="head"><a href="/about">AboutUs</a></p>
             </div>
             <div>
-                <h3><a href="">Contact</a></h3>
+                <p class="head"><a href="">Contact</a></p>
             </div>
             <div>
                 <% if (isAuthenticated) { %>
@@ -58,6 +58,7 @@
                     </div> -->
                     <div class="profile-container">
                         <button class="user-icon-button" onclick="toggleUserProfile()">
+                            <div class="profile-image"></div>
                             <img class="profile-image" src="../profile.png" alt="Profile Photo">
                         </button>
                         <div id="user-profile" class="user-profile-card">
@@ -92,7 +93,9 @@
             <% } else { %>
                 <!-- Login button -->
                 <form action="/login-page" method="post">
-                    <button class="btnLogin-popup" type="submit">Login</button>
+                    <button class="btnLogin-popup" type="submit">
+                        <p class="login">Login</p>
+                    </button>
                 </form>
                 <% } %>
         </div>

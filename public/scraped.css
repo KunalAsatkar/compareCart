@@ -1,14 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins&display=swap");
+
 :root {
     --rad: 0.5vw;
     --dur: .2s;
     --color-dark: black;
     --color-light: #FAF7F0;
     --color-brand: #2192FF;
-    --font-fam: 'Righteous', cursive;
+    --font-fam: 'Poppins', sans-serif;
     --height: calc(2.2vw + 1.9vh);
     --btn-width: calc(2.2vw + 2.8vh);
     --bez: cubic-bezier(0, 0, 0.43, 1.49);
 }
+
+
 
 body {
     /* padding-left: 15px; */
@@ -30,14 +34,19 @@ h1 {
 }
 
 h2 {
-    font-family: 'Agdasima', sans-serif;
+
+    font-size: calc(1.3vw + 1.3vh);
+    padding-left: 8%;
+    /* font-family: 'Agdasima', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     font-weight: 1000;
 }
 
 h3 {
-    font-size: calc(0.8vw + 0.8vh);
+    font-size: calc(1vw + 1vh);
     padding-left: 5px;
-    font-family: 'Agdasima', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
 }
 
 a {
@@ -83,7 +92,7 @@ a {
     box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
 }
 
-.middle_tagline {
+/* .middle_tagline {
     position: relative;
     padding-top: 10px;
 }
@@ -96,7 +105,7 @@ p.tagline {
     margin-left: 4vh;
     width: 50vw;
     /* height: auto; */
-    font-size: calc(2.2vw + 2.3vh);
+/* font-size: calc(2.2vw + 2.3vh);
     font-family: 'Righteous', cursive;
     font-weight: 500;
     color: #FAF7F0;
@@ -119,17 +128,17 @@ p.descreption {
     margin-left: 4vh;
     max-width: 40%;
     /* min-width: 200px; */
-}
+/* }
 
 form.search_actions {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     width: 100%;
-    min-width: 100px;
-    /* width: calc(25vw + 5vh); */
-    /* min-width: 10vw; */
-    background: var(--color-brand);
+    min-width: 100px; */
+/* width: calc(25vw + 5vh); */
+/* min-width: 10vw; */
+/* background: var(--color-brand);
     border-radius: var(--rad);
 }
 
@@ -159,9 +168,10 @@ label {
     height: 1px;
     width: 1px;
     overflow: hidden;
-}
+/* }  */
 
 .container {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -191,7 +201,7 @@ img {
 }
 
 p.image_descreption {
-    font-family: 'Agdasima', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin-top: 0;
 }

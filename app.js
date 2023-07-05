@@ -43,8 +43,8 @@ const { spawn } = require('child_process');
 
 // render home route
 app.get('/', (req, res) => {
-    const isAuthenticated = req.session.user ? true : false;
-    const user = req.session.user;
+    let isAuthenticated = req.session.user ? true : false;
+    let user = req.session.user;
 
     res.render('index', { isAuthenticated, user });
 });
@@ -120,7 +120,11 @@ app.post('/', (req, res) => {
 
 
 app.get('/about', (req, res) => {
-    res.render('about_us');
+    // res.render('about_us');
+    let isAuthenticated = req.session.user ? true : false;
+    let user = req.session.user;
+
+    res.render('about_us', { isAuthenticated, user });
 });
 
 

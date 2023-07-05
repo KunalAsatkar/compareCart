@@ -15,7 +15,9 @@ app.set('views', __dirname + '/views');
 // mongoose
 const mongoose = require('mongoose');
 // mongoose.connect('mongodb://127.0.0.1:27017/userDB');
-mongoose.connect('mongodb+srv://kunalasatkar:vishal1502@cluster0.egecei0.mongodb.net/userDB');
+// mongoose.connect('mongodb+srv://username:password@cluster0.egecei0.mongodb.net/userDB');
+mongoose.connect(process.env.MONGODB_URI);
+
 
 
 const userSchema = {
